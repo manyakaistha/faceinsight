@@ -12,4 +12,4 @@ For a production frontend, run `npm run build` then `npm start` inside `frontend
 
 ## Model and sample artifacts
 
-Keep `export_resnet18_lora_v6/weights_state_dict.pth` and `model_meta.json` in place. Live inference uses the checkpoint without remote services. Sample portraits require `face_dataset/test/00000.jpg`, `00001.jpg`, and `00002.jpg`. Evaluation pages read the JSON reports in `artifacts/evaluation/`.
+Keep `export/export_resnet18_lora_v6/weights_state_dict.pth` and `model_meta.json` in place. Live inference uses the checkpoint without remote services. Sample portraits require `face_dataset/test/00000.jpg`, `00001.jpg`, and `00002.jpg`. Evaluation pages read the JSON reports in `artifacts/evaluation/`.

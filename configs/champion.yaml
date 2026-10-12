@@ -12,5 +12,5 @@ champion:
   age_weight: 0.7
   gender_weight: 0.3
   version: champion-resnet50-lora-v6
-  checkpoint_dir: export_resnet18_lora_v6
-  weights_path: export_resnet18_lora_v6/weights_state_dict.pth
+  checkpoint_dir: export/export_resnet18_lora_v6
+  weights_path: export/export_resnet18_lora_v6/weights_state_dict.pth

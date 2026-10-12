@@ -70,6 +70,7 @@ def load_champion_model(device: str | torch.device = "cpu") -> Tuple[AgeGenderMo
     # Look in common locations
     repo_root = Path(__file__).resolve().parents[2]
     candidates = [
+        repo_root / "export" / "export_resnet18_lora_v6",
         repo_root / "export_resnet18_lora_v6",
         repo_root / "checkpoints" / "champion",
         Path("export_resnet18_lora_v6"),
@@ -77,4 +78,4 @@ def load_champion_model(device: str | torch.device = "cpu") -> Tuple[AgeGenderMo
     for c in candidates:
         if c.exists():
             return load_model_from_checkpoint_dir(c, device=device)
-    raise FileNotFoundError("Champion checkpoint directory not found (expected export_resnet18_lora_v6/)")
+    raise FileNotFoundError("Champion checkpoint directory not found (expected export/export_resnet18_lora_v6/)")

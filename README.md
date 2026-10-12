@@ -41,7 +41,7 @@ Canvas motion uses seeded geometry, respects reduced-motion settings, and pauses
 
 ## Model files
 
-Model checkpoints, training data, and original notebooks are excluded from this source repository. To run inference, put the NPPE-1 champion `weights_state_dict.pth` and `model_meta.json` in `export_resnet18_lora_v6/`. The folder's legacy name says ResNet18; its metadata and checkpoint identify ResNet50. The model loader requires every checkpoint key to match. The three optional sample portraits belong in `face_dataset/test/00000.jpg` through `00002.jpg`.
+Model checkpoints, training data, and original notebooks are excluded from this source repository. Local model exports are organized under `export/`, and notebooks under `notebooks/`. To run inference, put the NPPE-1 champion `weights_state_dict.pth` and `model_meta.json` in `export/export_resnet18_lora_v6/`. The folder's legacy name says ResNet18; its metadata and checkpoint identify ResNet50. The model loader requires every checkpoint key to match. The three optional sample portraits belong in `face_dataset/test/00000.jpg` through `00002.jpg`.
 
 The heads preserve both dropout layers from the training notebook. See [`docs/model_card.md`](docs/model_card.md) for intended use and model limitations.
 
