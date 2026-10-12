@@ -1,0 +1,43 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/.env.local
+**/.env.development.local
+**/.env.production.local
+tokens.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Next.js / Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Model weights and private or generated data
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+face_dataset/
+export_*/
+checkpoints/
+*.ipynb
+.ipynb_checkpoints/
+submission*.csv
+*.zip
+
+# OS and editor files
+.DS_Store
+*.bak
+.vscode/
+.idea/

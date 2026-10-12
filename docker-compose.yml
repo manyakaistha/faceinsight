@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - FACEINSIGHT_HOST=0.0.0.0
+      - FACEINSIGHT_PORT=8000

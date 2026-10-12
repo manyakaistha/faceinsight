@@ -1,0 +1,30 @@
+{
+  "num_samples": 694,
+  "age": {
+    "mae": 38.87031700288185,
+    "rmse": 42.47664216581858,
+    "median_ae": 34.0,
+    "max_error": -4.0,
+    "min_error": -90.0,
+    "std_error": 17.12785992990577
+  },
+  "gender": {
+    "accuracy": 0.2564841498559078,
+    "macro_f1": 0.21583981500945973,
+    "precision": 0.6228070175438596,
+    "recall": 0.5095057034220533,
+    "confusion_matrix": [
+      [
+        168,
+        0
+      ],
+      [
+        516,
+        10
+      ]
+    ]
+  },
+  "age_quality": 0.5752335783418141,
+  "composite_score": 0.3138983315072452,
+  "model_version": "champion-resnet50-lora-v6"
+}

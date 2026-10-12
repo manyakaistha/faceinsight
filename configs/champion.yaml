@@ -1,0 +1,16 @@
+champion:
+  arch: resnet50
+  lora_r: 12
+  lora_alpha: 24.0
+  lora_dropout: 0.0
+  head_dropout: 0.2
+  img_size: 224
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  min_age: 0.0
+  max_age: 100.0
+  age_weight: 0.7
+  gender_weight: 0.3
+  version: champion-resnet50-lora-v6
+  checkpoint_dir: export_resnet18_lora_v6
+  weights_path: export_resnet18_lora_v6/weights_state_dict.pth
